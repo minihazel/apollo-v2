@@ -1,0 +1,22 @@
+{
+  "name": "apollo-v2",
+  "version": "1.0.0",
+  "description": "A Github version private bot relevant to Apollo Sixteen.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/minihazel/apollo-v2.git"
+  },
+  "author": "minihazel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/minihazel/apollo-v2/issues"
+  },
+  "homepage": "https://github.com/minihazel/apollo-v2#readme",
+  "dependencies": {
+    "discord.js": "^11.5.1"
+  }
+}
