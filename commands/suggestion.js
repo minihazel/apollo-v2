@@ -7,6 +7,7 @@ module.exports.run = async (bot, message, args) => {
 
 	const getchannel = guild.channels.find('name', 'get-channel');
 	const setchannel = guild.channels.find('name', 'set-channel');
+	const ico = message.author.displayAvatarURL
 
 	let fullcommand
 	let create = `create`;
@@ -43,7 +44,7 @@ module.exports.run = async (bot, message, args) => {
 				if (collected.first().content === `Yes` || collected.first().content === `yes`) { // If the user would like to send said suggestion to the public
 
 					setchannel.send({embed: {
-						color: 11542655,
+						color: 2003199,
 						author: {
 							name: `Suggestion created by ${message.author.tag}`,
 							icon_url: message.author.displayAvatarURL,
@@ -54,7 +55,7 @@ module.exports.run = async (bot, message, args) => {
 						msg.react(`👎`);
 
 						msg.edit({embed: {
-							color: 11542655,
+							color: 2003199,
 							author: {
 								name: `Suggestion created by ${message.author.username}`,
 								icon_url: message.author.displayAvatarURL,
@@ -89,10 +90,10 @@ module.exports.run = async (bot, message, args) => {
 		setchannel.fetchMessage(cmdid).then(msg => { // Fetch the message via the message ID provided
 			console.log(msg.embeds[0]);
 			msg.edit({embed: { // From line 92 to line 100 we get the embed properties of the message we fetch from set-channel
-				color: 11542655,
+				color: 16725044, //
 				author: {
 					name: msg.embeds[0].author.name,
-					icon_url: msg.embeds[0].author.name.displayAvatarURL
+					icon_url: msg.embeds[0].author.iconURL
 				},
 				description:  msg.embeds[0].description,
 				footer: {
@@ -113,10 +114,10 @@ module.exports.run = async (bot, message, args) => {
 		setchannel.fetchMessage(cmdid).then(msg => { // Fetch the message via the message ID provided
 			console.log(msg.embeds[0]);
 			msg.edit({embed: { // From line 92 to line 100 we get the embed properties of the message we fetch from set-channel
-				color: 11542655,
+				color: 2003199,
 				author: {
 					name: msg.embeds[0].author.name,
-					icon_url: msg.embeds[0].author.name.displayAvatarURL
+					icon_url: msg.embeds[0].author.iconURL
 				},
 				description:  msg.embeds[0].description,
 				footer: {
@@ -137,10 +138,10 @@ module.exports.run = async (bot, message, args) => {
 		setchannel.fetchMessage(cmdid).then(msg => { // Fetch the message via the message ID provided
 			console.log(msg.embeds[0]);
 			msg.edit({embed: { // From line 92 to line 100 we get the embed properties of the message we fetch from set-channel
-				color: 11542655,
+				color: 59252,
 				author: {
 					name: msg.embeds[0].author.name,
-					icon_url: msg.embeds[0].author.name.displayAvatarURL
+					icon_url: msg.embeds[0].author.iconURL
 				},
 				description:  msg.embeds[0].description,
 				footer: {
@@ -151,7 +152,21 @@ module.exports.run = async (bot, message, args) => {
 			msg.clearReactions();
 			getchannel.send(`Suggestion ${msg.id} accepted by ${message.author.tag}.\n\nDescription: \`${msg.embeds[0].description.slice(17)}\``).then(msgv => {
 				msgv.delete(10000);
+
 			})
+			var interval = setTimeout(function () {
+				msg.edit({embed: { // From line 92 to line 100 we get the embed properties of the message we fetch from set-channel
+					color: 59252,
+					author: {
+						name: msg.embeds[0].author.name,
+						icon_url: msg.embeds[0].author.iconURL
+					},
+					description:  msg.embeds[0].description + '\n\nSuggestion has been accepted and may not be deleted unless given explicit permission.',
+					footer: {
+						text: `Suggestion accepted`
+					}
+				}});
+			}, 5000)
 		})
 
 	}
