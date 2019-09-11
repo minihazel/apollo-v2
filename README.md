@@ -3,5 +3,7 @@ Apollo V2 is my new Github project belonging to my loving bot Apollo Sixteen. It
 
 **Please note**: While some of these commands will be built for rather specific usabilities, you may modify them for personal use and make sure it fits into your own bot. Apollo V2 has no copyright claim, but the least I ask is for you to notify me if you'd like to use the code in my repository. Thanks!
 
+This repository is not meant for beginners to quickly copy and paste the code into their own bot. It is a simple place for me to host my commands on a cloud in a way to avoid clutter for my personal space. There may be code you do not understand, but that is not my responsibility.
+
 If you'd like to friend request me on Discord, here's my tag:
 > *you're#7036
