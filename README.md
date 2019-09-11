@@ -1,9 +1,16 @@
 # Apollo V2
-Apollo V2 is my new Github project belonging to my loving bot Apollo Sixteen. It is a private bot with capabilities similar to that of most popular bots. This repository will contain commands from Apollo Sixteen that are aimed for usage by anyone who visits this Github. Not all of my commands will be listed here, only the more complete ones that are easy to use. Two examples are a full fledged ticket system and a suggestion system. The commits here will be updated as time progresses and I update my commands.
+Apollo V2 is my new Github project belonging to my loving bot Apollo Sixteen. It is a private bot with capabilities similar to that of most popular bots. This repository will contain commands from Apollo Sixteen that are aimed for usage by anyone who visits this Github.
 
-**Please note**: While some of these commands will be built for rather specific usabilities, you may modify them for personal use and make sure it fits into your own bot. Apollo V2 has no copyright claim, but the least I ask is for you to notify me if you'd like to use the code in my repository. Thanks!
+## What is it meant for?
 
-This repository is not meant for beginners to quickly copy and paste the code into their own bot. It is a simple place for me to host my commands on a cloud in a way to avoid clutter for my personal space. There may be code you do not understand, but that is not my responsibility.
+Apollo V2 is sort of the cloudbased re-make of my current bot, Apollo Sixteen (or Apollo16). The cloudbased version will include only dynamic and rather easy to use commands that currently exist on Apollo16, but require editing to better fit and adapt to bots that choose to use my code. There will be regular (as regular as I can catch up to) updates to the commands and quite possibly the core files as time goes on as I want to make sure anyone who decides to use Apollo V2 will get the most updated version of it.
 
-If you'd like to friend request me on Discord, here's my tag:
-> *you're#7036
+### Prerequisites
+
+These are already included in Apollo V2's repository. However, if you do choose to copy and paste certain files or snippets of code right from the core files, you will need these dependencies:
+- [node.js@recommended](https://nodejs.org/en/)
+- [npm.js](https://www.npmjs.com/)
+- discord.js@11.5.1 (used in Apollo V2)
+- [colorhexa (for coloring embeds)](https://www.colorhexa.com/)
+
+### 
