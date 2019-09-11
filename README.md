@@ -13,4 +13,42 @@ These are already included in Apollo V2's repository. However, if you do choose 
 - discord.js@11.5.1 (used in Apollo V2)
 - [colorhexa (for coloring embeds)](https://www.colorhexa.com/)
 
-### 
+## Hierarchy
+
+Apollo V2 uses the following hierarchy:
+
+```
+commands ->
+    suggestion.js
+    ticket.js
+
+node_modules
+    discordjs
+
+index.js
+```
+If you would like to push a command to Apollo V2, push it into `commands` to avoid confusion and clutter, or create a pull request.
+
+## Features
+
+Apollo V2's current commands (inb4 update *soon:tm:*).
+
+> suggestion.js
+
+## Acknowledgements
+
+This bot is purely for private use and I do not take any responsibility for any mistake you make when copying/using the code from Apollo V2. There is no copyright claim, but please notify me if you've used my code and you liked it.
+
+The token in `botsettings.json` is two dummy sources created by [LastPass](https://www.lastpass.com/). Thank you, LastPass.
+
+## Contact
+
+I run a variety of social media accounts. Here are the ones I'm active on (my Discord will be in the bottom of this).
+
+- Steam: [publicized/hazel](https://steamcommunity.com/id/de_cyanide)
+- GTA5-Mods: [Remexy_](https://www.gta5-mods.com/users/Remexy_) (old name)
+- YouTube: [hazel chroma](https://www.youtube.com/channel/UCNYfjw9iIiZJKNC8x39FmQQ)
+- SoundCloud: [rosegoldhazel](https://soundcloud.com/rosegoldhazel)
+
+Lastly, here's my Discord tag. Add this if you want direct communication or are up for a chat. I'm available mostly 24/7.
+> *you're#7036
