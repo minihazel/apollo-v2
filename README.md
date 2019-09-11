@@ -10,6 +10,7 @@ Apollo V2 is sort of the cloudbased re-make of my current bot, Apollo Sixteen (o
 These are already included in Apollo V2's repository. However, if you do choose to copy and paste certain files or snippets of code right from the core files, you will need these dependencies:
 - [node.js@recommended](https://nodejs.org/en/)
 - [npm.js](https://www.npmjs.com/)
+- [request.js](https://www.npmjs.com/package/request)
 - discord.js@11.5.1 (used in Apollo V2)
 - [colorhexa (for coloring embeds)](https://www.colorhexa.com/)
 
