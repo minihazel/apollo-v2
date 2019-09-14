@@ -51,7 +51,7 @@ The token in `botsettings.json` is two dummy sources created by [LastPass](https
 
 I run a variety of social media accounts. Here are the ones I'm active on (my Discord will be in the bottom of this).
 
-- Steam: [publicized/hazel](https://steamcommunity.com/id/de_cyanide)
+- Steam: [hazel](https://steamcommunity.com/id/de_cyanide)
 - GTA5-Mods: [Remexy_](https://www.gta5-mods.com/users/Remexy_) (old name)
 - YouTube: [hazel chroma](https://www.youtube.com/channel/UCNYfjw9iIiZJKNC8x39FmQQ)
 - SoundCloud: [rosegoldhazel](https://soundcloud.com/rosegoldhazel)
