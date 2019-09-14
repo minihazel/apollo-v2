@@ -34,7 +34,10 @@ If you would like to push a command to Apollo V2, push it into `commands` to avo
 
 Apollo V2's current commands (inb4 update *soon:tm:*).
 
-> suggestion.js
+> avatar.js [Get player icons]
+> icon.js [Get guild icons]
+> quote.js [Quote messages into RichEmbeds, includes timestamp and author info]
+> suggestion.js [Suggestion system with statuses]
 
 ## Acknowledgements
 
