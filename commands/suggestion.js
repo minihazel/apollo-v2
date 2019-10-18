@@ -19,12 +19,8 @@ module.exports.run = async (bot, message, args) => {
 	const messageArray = message.content.split(` `);
 	const suggestion = messageArray.slice(2).join(` `);
 
-	if (!args[1]) return message.channel.send(`Please choose one of four options:\n\`create\`\n\`reject\`\n\`open\`\n\`accept\``).then(msg => {
-		msg.delete(4000)
-	})
-	if (!args[2]) return message.channel.send(`Please list a suggestion to display.`).then(msg => {
-		msg.delete(4000)
-	})
+	if (!args[1]) return message.channel.send(`Please choose one of four options:\n\`create\`\n\`reject\`\n\`open\`\n\`accept\``).then(msg => msg.delete(4000))
+	if (!args[2]) return message.channel.send(`Please list a suggestion to display.`).then(msg => msg.delete(4000))
 
 	if (args[1] === create) {
 		fullcommand = `/suggestion create`;
@@ -84,7 +80,7 @@ module.exports.run = async (bot, message, args) => {
 	} else if (args[1] === reject) {
 		fullcommand = `/suggestion reject`;
 
-		if (isNaN(args[2])) return message.channel.send(`Please provide an ID to fetch.`).then(msg => {msg.delete(3000)})
+		if (isNaN(args[2])) return message.channel.send(`Please provide an ID to fetch.`).then(msg => msg.delete(3000))
 		cmdid = args[2];
 
 		setchannel.fetchMessage(cmdid).then(msg => { // Fetch the message via the message ID provided
@@ -101,14 +97,12 @@ module.exports.run = async (bot, message, args) => {
 				}
 			}})
 
-			getchannel.send(`Suggestion ${msg.id} rejected.\n\nDescription: \`${msg.embeds[0].description.slice(17)}\``).then(msgv => {
-				msgv.delete(10000)
-			})
+			getchannel.send(`Suggestion ${msg.id} rejected.\n\nDescription: \`${msg.embeds[0].description.slice(17)}\``).then(msgv => msgv.delete(10000))
 		})
 	} else if (args[1] === open) {
 		fullcommand = `/suggestion open`;
 
-		if (isNaN(args[2])) return message.channel.send(`Please provide an ID to fetch.`).then(msg => {msg.delete(3000)})
+		if (isNaN(args[2])) return message.channel.send(`Please provide an ID to fetch.`).then(msg => msg.delete(3000))
 		cmdid = args[2];
 
 		setchannel.fetchMessage(cmdid).then(msg => { // Fetch the message via the message ID provided
@@ -125,14 +119,12 @@ module.exports.run = async (bot, message, args) => {
 				}
 			}});
 
-			getchannel.send(`Suggestion ${msg.id} opened.\n\nDescription: \`${msg.embeds[0].description.slice(17)}\``).then(msgv => {
-				msgv.delete(10000);
-			})
+			getchannel.send(`Suggestion ${msg.id} opened.\n\nDescription: \`${msg.embeds[0].description.slice(17)}\``).then(msgv => msgv.delete(10000))
 		})
 	} else if (args[1] === accept) {
 		fullcommand = `/suggestion accept`;
 
-		if (isNaN(args[2])) return message.channel.send(`Please provide an ID to fetch.`).then(msg => {msg.delete(3000)})
+		if (isNaN(args[2])) return message.channel.send(`Please provide an ID to fetch.`).then(msg => msg.delete(3000))
 		cmdid = args[2];
 
 		setchannel.fetchMessage(cmdid).then(msg => { // Fetch the message via the message ID provided
@@ -150,10 +142,7 @@ module.exports.run = async (bot, message, args) => {
 			}});
 
 			msg.clearReactions();
-			getchannel.send(`Suggestion ${msg.id} accepted by ${message.author.tag}.\n\nDescription: \`${msg.embeds[0].description.slice(17)}\``).then(msgv => {
-				msgv.delete(10000);
-
-			})
+			getchannel.send(`Suggestion ${msg.id} accepted by ${message.author.tag}.\n\nDescription: \`${msg.embeds[0].description.slice(17)}\``).then(msgv => msgv.delete(10000))
 			var interval = setTimeout(function () {
 				msg.edit({embed: { // From line 92 to line 100 we get the embed properties of the message we fetch from set-channel
 					color: 59252,
